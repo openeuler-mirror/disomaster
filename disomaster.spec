@@ -1,10 +1,11 @@
 Name:           disomaster
-Version:        5.0.1
+Version:        5.0.7
 Release:        1
 Summary:        Library to manipulate DISC burning
 License:        GPLv3+
 URL:            https://github.com/linuxdeepin/%{name}
-Source0:        %{url}/archive/%{version}/%{name}_%{version}.orig.tar.xz
+Source0:        %{name}_%{version}.tar.gz
+
 BuildRequires:  gcc-c++
 BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  libisoburn-devel
@@ -46,5 +47,8 @@ export PATH=%{_qt5_bindir}:$PATH
 %{_libdir}/pkgconfig/%{name}.pc
 
 %changelog
+* Tue Jul 26 2022 liweiganga <liweiganga@uniontech.com> - 5.0.7-1
+- update to 5.0.7
+
 * Fri Aug 7 2020 weidong <weidong@uniontech.com> - 5.0.1-1
 - Initial release for OpenEuler
